@@ -1,0 +1,42 @@
+
+/* test styles*/
+body,html {
+    height: 100%;
+}
+
+.grid-new {
+    display: grid;
+    height: 100%;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header-Element header-Element"
+    "main aside"
+    "footer footer";
+}
+.header {
+    grid-area: header-Element;
+    background-color: lightgrey;
+}
+.main {
+    grid-area: main;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.aside {
+    grid-area: aside;
+    background-color: lightgrey;
+}
+.footer {
+    grid-area: footer;
+    background-color: lightgrey;
+
+}
+.main-item {
+    border: 1px solid darkgreen;
+    display: grid;
+    place-items: center;
+}
